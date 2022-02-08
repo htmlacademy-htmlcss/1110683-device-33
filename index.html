@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header">
+    <a class="logo" href="#">
+      <img class="logo-image" src="" alt="Логотип Девайс">
+    </a>
+    <nav class="navigation">
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <img class="search-icon" src="" alt="">
+          <input type="text" placeholder="Текс поиска">
+          <button class="serch-button">Найти</button>
+        </li>
+        <li class="navigation-item">
+          <img class="enter-icon" src="" alt="">
+          <a class="navigation-link" href="#">Вход</a>
+        </li>
+        <li class="navigation-item">
+          <img class="compare-icon" src="" alt="">
+          <a class="navigation-link" href="#">Сравнить</a>
+        </li>
+        <li class="navigation-item">
+          <img class="bucket-icon" src="" alt="">
+          <a class="navigation-link" href="#">Корзина</a>
+        </li>
+      </ul>
+
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Каталог</a>
+          <img class="catalog-icon" src="" alt="">
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Доставка</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Гарантия</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="catalog.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="">01</div>
+  </header>
+
+  <main class="main-index">
+
+    <section class="gallery">
+      <img class="slider-image" src="" alt="Квадракоптер">
+      <button class="slider-button slider-prev" type="button">
+        <span class="visually-hidden">Предыдущее фото</span>
+      </button>
+      <button class="slider-button slider-next" type="button">
+        <span class="visually-hidden">Следующее фото</span>
+      </button>
+
+      <ol class="slider-pagination">
+        <li class="slider-pagination-item">
+          <button class="slider-pagination-button slider-pagination-button-current" type="button">
+            <span class="visually-hidden">1 фото</span>
+          </button>
+        </li>
+        <li class="slider-pagination-item">
+          <button class="slider-pagination-button" type="button">
+            <span class="visually-hidden">2 фото</span>
+          </button>
+        </li>
+        <li class="slider-pagination-item">
+          <button class="slider-pagination-button" type="button">
+            <span class="visually-hidden">3 фото</span>
+          </button>
+        </li>
+      </ol>
+    </section>
+
+    <section class="device">
+      <h2 class="device-title">Порхает как бабочка, жалит как пчела!</h2>
+      <p class="device-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+        замаскированным под стандартную камеру.
+      </p>
+      <a class="device-link" href="#">Подробнее</a>
+      <ul class="device-info">
+        <li class="device_info-item">
+          <p class="device-info-num">800 м</p>
+          <p class="device-description">Дальность полета</p>
+        </li>
+        <li class="device_info-item">
+          <p class="device-info-num">50 м</p>
+          <p class="device-description">Радиус поражения</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contacts">
+      <h2 class="contacts-title">Контакты</h2>
+      <h3 class="contacts-subtitle">Барбершоп «Бородинский»</h3>
+      <address class="contacts-address">
+        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <a class="contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
+      </address>
+      <h3 class="contacts-subtitle">Время работы</h3>
+      <ul class="contacts-schedule">
+        <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+        <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+      </ul>
+      <a class="button" href="#">Как проехать</a>
+      <a class="button button-feedback" href="#">Обратная связь</a>
+    </section>
+    <section class="appointment">
+      <h2 class="appointment-title">Записаться</h2>
+      <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
+      <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="appointment-form-date">
+          <label for="appointment-date">Дата</label>
+          <input type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
+        </p>
+        <p class="appointment-form-time">
+
+          <label for="appointment-time">Время</label>
+
+
+          <input type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
+        </p>
+        <p class="appointment-form-phone">
+          <label for="appointment-form-phone">
+            Телефон
+
+          </label>
+          <input type="text" id="appointment-form-phone" name="appointment-form-phone" placeholder="+7 800 000-00-00">
+        </p>
+        <p class="appointment-form-name">
+          <label for="appointment-name">
+            Ваше имя
+
+          </label>
+          <input class="field" type="text" id="appointment-name" name="appointment-name">
+        </p>
+        <button class="button" type="submit">Записаться</button>
+      </form>
+    </section>
+  </main>
+
+
+</body>
+
 </html>
