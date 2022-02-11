@@ -134,42 +134,52 @@
                 </form>
             </div>
             <div class="catalog">
-                <h3 class="catalog-item">Сортировка:</h3>
-                <select>
-                    <option value="">Популярные</option>
+                <h3 class="catalog-title">Сортировка:</h3>
+                <select class="select-control" aria-label="Сортировка">
+                    <option value="popular">Популярные</option>
+                    <option value="cheap">Дешевые</option>
+                    <option value="expensive">Дорогие</option>
                 </select>
                 <button class="sort-button"></button>
             </div>
-            <div class="catalog-gallary">
-                <div class="catalog-item">
-                    <img src="" alt="Любительская селфи-палка" class="catalog-item-image">
-                    <div class="catalog-item-description">
-                        <p class="catalog-item-info">Любительскаяселфи-палка</p>
-                        <p class="catalog-item-price">500 ₽</p>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <img src="" alt="Профессиональная селфи-палка" class="catalog-item-image">
-                    <div class="catalog-item-description">
-                        <p class="catalog-item-info">Профессиональная селфи-палка </p>
-                        <p class="catalog-item-price">1500 ₽</p>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <img src="" alt="Непотопляемая селфи-палка" class="catalog-item-image">
-                    <div class="catalog-item-description">
-                        <p class="catalog-item-info">Непотопляемая селфи-палка</p>
-                        <p class="catalog-item-price">2500 ₽</p>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <img src="" alt="Селфи-палка «Следуй за мной»" class="catalog-item-image">
-                    <div class="catalog-item-description">
-                        <p class="catalog-item-info">Селфи-палка «Следуй за мной»</p>
-                        <p class="catalog-item-price">1500 ₽</p>
-                    </div>
-                </div>
-            </div>
+            <ul class="product">
+                <li class="product-item">
+                    <a href="product.html" class="product-item-link">
+                        <img src="" alt="Любительская селфи-палка" class="product-item-image">
+                        <div class="product-item-description">
+                            <p class="product-item-info">Любительскаяселфи-палка</p>
+                            <p class="product-item-price">500 ₽</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-item">
+                    <a href="product.html" class="product-item-link">
+                        <img src="" alt="Профессиональная селфи-палка" class="product-item-image">
+                        <div class="product-item-description">
+                            <p class="product-item-info">Профессиональная селфи-палка </p>
+                            <p class="product-item-price">1500 ₽</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-item">
+                    <a href="product.html" class="product-item-link">
+                        <img src="" alt="Непотопляемая селфи-палка" class="product-item-image">
+                        <div class="product-item-description">
+                            <p class="product-item-info">Непотопляемая селфи-палка</p>
+                            <p class="product-item-price">2500 ₽</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-item">
+                    <a href="product.html" class="product-item-link">
+                        <img src="" alt="Селфи-палка «Следуй за мной»" class="product-item-image">
+                        <div class="product-item-description">
+                            <p class="product-item-info">Селфи-палка «Следуй за мной»</p>
+                            <p class="product-item-price">1500 ₽</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
             <button class="galary-button">Загрузить еще</button>
             <div class="pages-navigation">
                 <button class="button-prev">Назад</button>
