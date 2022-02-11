@@ -12,33 +12,35 @@
 
   <header class="page-header">
     <a class="logo" href="#">
-      <img class="logo-image" src="" alt="Логотип Девайс">
+      <img class="logo-image" src="./images/header/logo.png" width="150" height="40" alt="Логотип Девайс">
     </a>
     <nav class="navigation">
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <i></i>
+          <img src="./images/header/search.svg" width="16" height="16">
           <input type="text" placeholder="Текс поиска">
           <button class="serch-button">Найти</button>
         </li>
         <li class="navigation-item">
-          <i></i>
-          <a class="navigation-link" href="#">Вход</a>
+          <img src="./images/header/user.svg" width="13" height="12">
+          <a class="navigation-link" href="#">Войти</a>
         </li>
         <li class="navigation-item">
-          <i></i>
+          <img src="./images/header/compare.svg" width="13" height="12">
           <a class="navigation-link" href="#">Сравнить</a>
         </li>
         <li class="navigation-item">
-          <i></i>
+          <img src="./images/header/card.svg" width="30" height="20">
           <a class="navigation-link" href="#">Корзина</a>
         </li>
       </ul>
 
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Каталог</a>
-          <i></i>
+          <a class="navigation-link" href="catalog.html">
+            <p class="navigation-title">Каталогтоваров</p>
+            <img src="./images/header/catalog.svg" width="50" height="50">
+          </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Доставка</a>
@@ -57,7 +59,7 @@
   <main class="main-index">
 
     <section class="gallery">
-      <img class="slider-image" src="" alt="Квадракоптер">
+      <img class="slider-image" src="./images/main/slider-1.png" width="500" height="500" alt="Квадракоптер">
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущее фото</span>
       </button>
@@ -102,31 +104,43 @@
       </ul>
     </section>
 
-    <section class="range">
-      <ul class="range-list">
-        <li class="range-item">
-          <img class="range-item-image" src="" alt="">
-          <p class="range-item-description">Виртуальная реальность</p>
+    <section class="category">
+      <ul class="category-list">
+        <li class="category-item">
+          <div class="category-image">
+            <img src="./images/category/category-image-1.svg">
+          </div>
+          <p class="category-description">Виртуальная реальность</p>
         </li>
-        <li class="range-item">
-          <img class="range-item-image" src="" alt="">
-          <p class="range-item-description">Моноподы для селфи</p>
+        <li class="category-item">
+          <div class="category-image">
+            <img src="./images/category/category-image-2.svg">
+          </div>
+          <p class="category-description">Моноподы для селфи</p>
         </li>
-        <li class="range-item">
-          <img class="range-item-image" src="" alt="">
-          <p class="range-item-description">Экшн-камеры</p>
+        <li class="category-item">
+          <div class="category-image">
+            <img src="./images/category/category-image-3.svg">
+          </div>
+          <p class="category-description">Экшн-камеры</p>
         </li>
-        <li class="range-item">
-          <img class="range-item-image" src="" alt="">
-          <p class="range-item-description">Фитнес-браслеты</p>
+        <li class="category-item">
+          <div class="category-image">
+            <img src="./images/category/category-image-4.svg">
+          </div>
+          <p class="category-description">Фитнес-браслеты</p>
         </li>
-        <li class="range-item">
-          <img class="range-item-image" src="" alt="">
-          <p class="range-item-description">Умные часы</p>
+        <li class="category-item">
+          <div class="category-image">
+            <img src="./images/category/category-image-5.svg">
+          </div>
+          <p class="category-description">Умные часы</p>
         </li>
-        <li class="range-item">
-          <img class="range-item-image" src="" alt="">
-          <p class="range-item-description">Квадрокоптеры</p>
+        <li class="category-item">
+          <div class="category-image">
+            <img src="./images/category/category-image-6.svg">
+          </div>
+          <p class="category-description">Квадрокоптеры</p>
         </li>
       </ul>
     </section>
@@ -143,11 +157,11 @@
           к вашему подъезду совершенно бесплатно! Ведь
           мы неплохо заработаем, поднимая его на ваш этаж.</p>
       </div>
-      <img class="delivery-image" src="" alt="">
+      <img class="delivery-image" src="./images/main/delivery.png" alt="Доставщик">
     </section>
 
     <section class="special-order">
-      <i></i>
+      <img src="./images/main/delivery-icon.svg">
       <h3 class="special-order-description">Доставим редкий товар под заказ</h3>
       <a class="special-order-about" href="#">
         <i></i>
@@ -192,15 +206,11 @@
     </section>
 
     <footer class="page-footer">
-      <img class="footer-logo" src="" alt="">
+      <img class="footer-logo" src="./images/footer/logo.png" alt="Логотип Девайс">
       <div class="footer-nav">
         <p class="footer-addres">Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</p>
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
-            <img class="catalog-icon" src="" alt="">
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Доставка</a>
           </li>
@@ -216,11 +226,17 @@
         </p>
       </div>
       <div class="social-media">
-        <a href="" class="social-media-link"><i></i></a>
-        <a href="" class="social-media-link"><i></i></a>
-        <a href="" class="social-media-link"><i></i></a>
+        <a href="" class="social-media-link">
+          <img src="./images/footer/fb.png" alt="">
+        </a>
+        <a href="" class="social-media-link">
+          <img src="./images/footer/ig.png" alt="">
+        </a>
+        <a href="" class="social-media-link">
+          <img src="./images/footer/tw.png" alt="">
+        </a>
       </div>
-      <img class="academy-logo" src="" alt="">
+      <img class="academy-logo" src="./images/footer/academy-logo.png" alt="Логотип Академии">
 
     </footer>
   </main>
