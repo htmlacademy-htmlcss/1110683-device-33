@@ -34,13 +34,49 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: #000;
+    color: #444;
     background: #fff;
 }
 
 ul{
     list-style: none;
 }
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000;
+}
+
+h3 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.info-link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none
+}
+
+.navigation-link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/************************ HEADER **********************/
 
 .page-header {
     color: #000;
@@ -64,31 +100,10 @@ ul{
 }
 
 .navigation-link {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
     color: #000;
-    text-decoration: none;
 }
 
-.device-title {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 50px;
-}
-
-.device-link {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #000;
-    text-decoration: none
-}
+/************************ DEVICE **********************/
 
 .device-info-num {
     font-family: "Rubik", sans-serif;
@@ -102,12 +117,86 @@ ul{
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    color: #444;
 }
+
+/************************ CATEGORY **********************/
 
 .category-description {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
+    text-decoration: none;
+    color: #000;
+}
+
+/************************ SPECIAL ORDER **********************/
+
+.special-order-description {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+/************************ COMPANY DETAILS **********************/
+
+.company-about-list-item {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+}
+
+.company-about-list-item::before {
+    content: "\2022";
+    color: #FFC700;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.company-contact-phone {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444;
+}
+
+/************************ SUBSCRITION **********************/
+
+.subscription-button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+}
+
+/************************ FOOTER **********************/
+
+.footer-addres {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    background-color: #444;
+}
+
+.footer-link {
+    color: #fff;
+    background-color: #444;
+}
+
+.phone-link {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    background-color: #444;
 }
