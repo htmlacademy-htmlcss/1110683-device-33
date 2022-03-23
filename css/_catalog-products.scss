@@ -1,0 +1,147 @@
+.catalog-products {
+    background-color: #f0f0f0;
+}
+
+.catalog-products__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters {
+    width: 200px;
+}
+
+.filters__title {
+    padding: 25px 0 60px;
+    font-size: 1.6rem;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+fieldset {
+    border: none;
+}
+
+.catalog__title {
+    font-weight: 700;
+    line-height: 20px;
+    border-top: 2px solid #000;
+    width: 100%;
+    padding-top: 12px;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 35px;
+}
+
+.catalog-button {
+    border: none;
+    text-transform: uppercase;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8f5zhPwAHWgLHG8mznwAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-size: 100% 7px;
+    background-position: 25% 54%;
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    font-size: 1.8rem;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 21px;
+}
+
+.catalog {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+}
+
+.catalog-list {
+    width: 840px;
+}
+
+.catalog-title {
+    font-size: 1.6rem;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.select-control {
+    border: none;
+    background: transparent;
+    font-size: 1.8rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    padding-right: 30px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.product-group {
+    background-color: #fff;
+    padding-bottom: 78px;
+}
+
+.product__item {
+    margin-top: 44px;
+}
+
+.product-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.product__title {
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.galary-button {
+    padding: 18px 0;
+    margin: 44px 30px;
+    background-color: transparent;
+    width: 780px;
+    border: 3px solid #E5E5E5;
+    font-size: 1.6rem;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pages-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 25px;
+    background-color: #EBEBEB;
+    margin: 0 30px;
+    width: 780px;
+    button {
+        border: none;
+        font-family: Raleway, sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 21px;
+        text-transform: uppercase;
+    }
+}

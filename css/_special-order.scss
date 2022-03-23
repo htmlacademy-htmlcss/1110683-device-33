@@ -1,0 +1,32 @@
+.special-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F0F0F0;
+    margin-top: 70px;
+    
+}
+
+.delivery-icon {
+    background-color: #FFE17F;
+    width: 125px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        max-width: 50%;
+    }
+}
+
+.special-order__description {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 23px;
+}
+
+.special-order__about {
+    padding-right: 42px;
+}
