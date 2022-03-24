@@ -1,0 +1,100 @@
+.company-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 117px 0 80px;
+}
+
+.company__title {
+    font-size: 5rem;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px;
+    padding-bottom: 48px;
+    color: #000;
+}
+
+.company-about__subtitle {
+    color: #444;
+    padding-bottom: 30px;
+}
+
+.company-about-list {
+    list-style: none;
+}
+
+.company-about-list__item {
+    font-weight: 700;
+    line-height: 20px;
+    padding-bottom: 19px;
+    &::before {
+        content: "\2022";
+        color: #ffc700;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+}
+
+.company-about-link {
+    display: inline-block;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 21px;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 190px;
+        background: #FFE17F;
+        top: 9px;
+        left: -17px;
+        z-index: -1;
+    }
+}
+
+.company-contact {
+    color: #444;
+    padding-left: 90px;
+}
+
+.company-contact__description {
+    padding-bottom: 30px;
+}
+
+.company-contact__subtitle {
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.company-contact__phone {
+    margin-bottom: 50px;
+    text-decoration: underline;
+    a {
+        color: #444;
+    }
+}
+
+.company-contact-link {
+    display: inline-block;
+    position: relative;
+    padding: 40px 0 0 40px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 21px;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 190px;
+        background: #FFE17F;
+        top: 49px;
+        left: 6px;
+        z-index: -1;
+    }
+}

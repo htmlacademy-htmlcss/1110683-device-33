@@ -1,0 +1,61 @@
+.device-group {
+    display: flex;
+    justify-content: space-between;
+    img {
+        margin-top: -150px;
+        z-index: 9;
+    }
+}
+
+.device {
+    padding-left: 50px;
+    margin-top: -29px;
+    z-index: 9;
+}
+
+.device__title {
+    font-size: 5rem;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+.device__description {
+    padding: 30px 0 50px 0;
+}
+
+.device-link {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 21px;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 190px;
+        background: #FFE17F;
+        top: 9px;
+        left: -17px;
+        z-index: -1;
+    }
+}
+
+.device-info__title {
+    font-size: 3.6rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    padding-top: 40px;
+}
+
+.device-info__description {
+    font-size: 1.6rem;
+    color: #444;
+    padding: 12px 20px 0 0;
+}
