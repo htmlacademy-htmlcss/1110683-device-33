@@ -225,3 +225,119 @@ fieldset {
         outline: none;
     }   
 }
+
+
+.navigation-catalog-button {
+    position: relative;
+    z-index: 2;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background-color: #ffe17f;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navigation-catalog {
+    position: relative;
+    height: 20px;
+    margin-right: auto;
+  }
+  
+  .navigation-catalog-button::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -68px;
+    z-index: 2;
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-image: url("../images/main/minus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+  }
+  
+  .navigation-catalog-close::after {
+    background-image: url("../images/main/plus.svg");
+  }
+  
+  .navigation-catalog-button:hover::after {
+    opacity: 1;
+  }
+  
+  .navigation-catalog-button::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: -2px;
+    width: 297px;
+    height: 54px;
+  }
+  
+  .navigation-catalog-button:focus {
+    outline: none;
+  }
+  
+  
+  .navigation-catalog-button:focus::before {
+    outline: 2px solid #af4fff;
+  }
+  
+  .navigation-catalog-close ~ .navigation-catalog-list {
+    display: none;
+  }
+  
+  .navigation-catalog:focus-within > .navigation-catalog-list {
+    display: flex;
+  }
+  
+  .navigation-catalog:focus-within > .navigation-catalog-button::after {
+    background-image: url("../images/main/minus.svg");
+  }
+  
+  .navigation-catalog-list {
+    position: absolute;
+    top: 100%;
+    left: -60px;
+    z-index: 1;
+    display: flex;
+    box-sizing: border-box;
+    width: 1160px;
+    height: 180px;
+    padding: 24px 60px 27px;
+    line-height: 34px;
+    list-style: none;
+    background-color: #ffe17f;
+  }
+  
+  .navigation-item-wrapper:not(:last-child) {
+    margin-right: 58px;
+  }
+  
+  .navigation-catalog-link {
+    font-size: 16px;
+    line-height: 18px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .navigation-catalog-link:hover {
+    opacity: 0.6;
+  }
+  
+  .navigation-catalog-link:focus {
+    outline: 2px solid #af4fff;
+  }
+  
+  .navigation-catalog-link-current {
+    border-bottom: 1px solid #000000;
+  }
+  

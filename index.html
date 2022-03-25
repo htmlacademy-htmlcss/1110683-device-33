@@ -41,11 +41,34 @@
         </div>
       </nav>
       <div class="navigation-list">
-        <div class="catalog-group">
-          <a class="catalog-group__title" href="./catalog.html">Каталог товаров</a>
-          <a class="catalog-group__title" href="./catalog.html">
-            <img class="catalog-group__img" src="./images/header/catalog.svg" width="50" height="50">
-          </a>
+        <div class="navigation-catalog">
+          <button class="navigation-catalog-button navigation-catalog-close" type="button" name="navigation-catalog-button">Каталог товаров</button>  <!-- Для открытия меню убрать стиль "navigation-catalog-close" -->
+          <ul class="navigation-catalog-list"> 
+            <div class="navigation-item-wrapper">
+              <li class="navigation-catalog-item">
+                <a href="#" class="navigation-catalog-link">Виртуальная реальность</a>
+              </li>
+              <li class="navigation-catalog-item">
+                <a href="catalog.html" class="navigation-catalog-link">Моноподы для cелфи</a>
+              </li>
+              <li class="navigation-catalog-item">
+                <a href="#" class="navigation-catalog-link">Экшн-камеры</a>
+              </li>
+            </div>
+            <div class="navigation-item-wrapper">
+              <li class="navigation-catalog-item">
+                <a href="#" class="navigation-catalog-link">Фитнес-браслеты</a>
+              </li>
+              <li class="navigation-catalog-item">
+                <a href="#" class="navigation-catalog-link">Умные часы</a>
+              </li>
+            </div>
+            <div class="navigation-item-wrapper">
+              <li class="navigation-catalog-item">
+                <a href="#" class="navigation-catalog-link">Квадрокоптеры</a>
+              </li>
+            </div>
+          </ul>
         </div>
         <div class="navigation-list-group">
           <a class="navigation-link" href="#">Доставка</a>
@@ -69,7 +92,7 @@
             <div class="slider-text-wrapper">
               <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
               <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a class="button slider-link" href="#">Подробнее</a>
+              <a class="button slider-link" href="./catalog.html">Подробнее</a>
               <div class="slider-properties">
                 <div class="slider-properties-wrapper">
                   <b class="slider-property-bold">800 м</b>
@@ -272,7 +295,7 @@
       <div class="subscription__form">
         <input class="subscription-email" type="email" name="" id="" placeholder="Ваш e-mail">
         <button class="subscription-button">Подписаться</button>
-        <img src="./images/main/Vector.svg" alt="">
+        <img src="./images/main/vector.svg" alt="">
         <p class="subscription-info">Это бесплатно</p>
       </div>
     </div>
