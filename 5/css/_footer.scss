@@ -1,0 +1,70 @@
+.page-footer {
+    background-color: #444;
+    padding: 62px 0;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 35px 0 58px;
+}
+
+.footer-address {
+    font-size: 1.6rem;
+    line-height: 20px;
+    display: inline-block;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 7px;
+        width: 80px;
+        background: #FFC500;
+        top: 113px;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+.footer-list{
+    display: flex;
+    align-items: center;
+    list-style: none; 
+    justify-content: space-between;
+}
+
+.footer-link {
+    color: #fff;
+    padding-right: 35px;
+    font-size: 1.8rem;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 21px;
+}
+
+.phone-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media__link {
+    padding-right: 15px;
+}
+
+.footer-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.academy-logo {
+    padding-left: 370px;
+}
