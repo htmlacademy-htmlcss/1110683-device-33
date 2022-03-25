@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/header/favicon.ico">
 </head>
 
 <body>
@@ -16,13 +17,14 @@
       <nav class="header__navigation">
         <div class="header__navigation__item">
           <div class="search-group">
-            <div class="search-group__item">
-              <img class="search-image" src="./images/header/search.svg" width="16" height="16">
-              <input class="search-input" type="text" placeholder="Текс поиска">
+            <form class="search-group__item" action="https://echo.htmlacademy.ru">
+              <img class="search-image" src="./images/header/search.svg" width="16" height="16" alt="Поиск">
+              <label for="search"></label>
+              <input class="search-input" id="search" name="search" type="text" placeholder="Текс поиска" required>
               <button class="search-button">Найти</button>
-            </div>
+            </form>
             <div class="search-group__item">
-              <img class="enter-img" src="./images/header/user.svg" width="13" height="12">
+              <img class="enter-img" src="./images/header/user.svg" width="13" height="12" alt="Поиск">
               <a class="search-group__link" href="#">Войти</a>
             </div>
           </div>
@@ -30,11 +32,11 @@
         <div class="header__navigation__item">
           <div class="login-group">
             <div class="login-group__item">
-              <img class="compare-img" src="./images/header/compare.svg" width="13" height="12">
+              <img class="compare-img" src="./images/header/compare.svg" width="13" height="12" alt="Поиск">
               <a class="login-group__link" href="#">Сравнить</a>
             </div>
             <div class="login-group__item">
-              <img class="trash-img" src="./images/header/card.svg" width="31" height="21">
+              <img class="trash-img" src="./images/header/card.svg" width="31" height="21" alt="Поиск">
               <a class="login-group__link" href="#">Корзина</a>
             </div>
           </div>
@@ -42,32 +44,28 @@
       </nav>
       <div class="navigation-list">
         <div class="navigation-catalog">
-          <button class="navigation-catalog-button navigation-catalog-close" type="button" name="navigation-catalog-button">Каталог товаров</button>  <!-- Для открытия меню убрать стиль "navigation-catalog-close" -->
-          <ul class="navigation-catalog-list"> 
-            <div class="navigation-item-wrapper">
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Виртуальная реальность</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="catalog.html" class="navigation-catalog-link">Моноподы для cелфи</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Экшн-камеры</a>
-              </li>
-            </div>
-            <div class="navigation-item-wrapper">
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Фитнес-браслеты</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Умные часы</a>
-              </li>
-            </div>
-            <div class="navigation-item-wrapper">
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Квадрокоптеры</a>
-              </li>
-            </div>
+          <button class="navigation-catalog-button navigation-catalog-close" type="button"
+            name="navigation-catalog-button">Каталог товаров</button>
+          <!-- Для открытия меню убрать стиль "navigation-catalog-close" -->
+          <ul class="navigation-catalog-list">
+            <li class="navigation-catalog-item">
+              <a href="#" class="navigation-catalog-link">Виртуальная реальность</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a href="catalog.html" class="navigation-catalog-link">Моноподы для cелфи</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a href="#" class="navigation-catalog-link">Экшн-камеры</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a href="#" class="navigation-catalog-link">Фитнес-браслеты</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a href="#" class="navigation-catalog-link">Умные часы</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a href="#" class="navigation-catalog-link">Квадрокоптеры</a>
+            </li>
           </ul>
         </div>
         <div class="navigation-list-group">
@@ -77,9 +75,12 @@
         </div>
       </div>
     </header>
+  </div>
 
-    <main class="main-index">
+  <main class="main-index">
+    <div class="container">
       <section class="main-slider">
+        <h2 class="visually-hidden">Галерея товаров</h2>
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущий товар</span>
         </button>
@@ -91,7 +92,8 @@
             <img class="slider-image" src="./images/main/slider-1.png" width="560" height="560" alt="Квадрокоптер">
             <div class="slider-text-wrapper">
               <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
-              <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру.</p>
               <a class="button slider-link" href="./catalog.html">Подробнее</a>
               <div class="slider-properties">
                 <div class="slider-properties-wrapper">
@@ -109,7 +111,8 @@
             <img class="slider-image" src="./images/main/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
             <div class="slider-text-wrapper">
               <h3 class="slider-title">Худеем правильно!</h3>
-              <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+                соблюдать диету.</p>
               <a class=" button slider-link" href="#">Подробнее</a>
               <div class="slider-properties">
                 <div class="slider-properties-wrapper">
@@ -120,10 +123,11 @@
             </div>
           </li>
           <li class="slider-card">
-            <img class="slider-image" src="./images/main/slider-3.png"width="560" height="560" alt="Монопод для селфи" >
+            <img class="slider-image" src="./images/main/slider-3.png" width="560" height="560" alt="Монопод для селфи">
             <div class="slider-text-wrapper">
               <h3 class="slider-title">Делай селфи, как Бен Стиллер!</h3>
-              <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
+                метров длиной и весом всего 5 кг.</p>
               <a class="button slider-link" href="#">Подробнее</a>
               <div class="slider-properties">
                 <div class="slider-properties-wrapper">
@@ -160,59 +164,61 @@
           </li>
         </ol>
       </section>
-      <section class="category">
+    </div>
+    <section class="category">
+      <div class="container">
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="category-list">
           <li class="category-list__item">
             <div class="category-image">
-              <img src="./images/category/category-image-1.svg">
+              <img src="./images/category/category-image-1.svg" alt="Поиск">
             </div>
             <a href="#" class="category-description">Виртуальная реальность</a>
           </li>
           <li class="category-list__item">
             <div class="category-image">
-              <img src="./images/category/category-image-2.svg">
+              <img src="./images/category/category-image-2.svg" alt="Поиск">
             </div>
             <a href="#" class="category-description">Моноподы для селфи</a>
           </li>
           <li class="category-list__item">
             <div class="category-image">
-              <img src="./images/category/category-image-3.svg">
+              <img src="./images/category/category-image-3.svg" alt="Поиск">
             </div>
             <a href="#" class="category-description">Экшн-камеры</a>
           </li>
           <li class="category-list__item">
             <div class="category-image">
-              <img src="./images/category/category-image-4.svg">
+              <img src="./images/category/category-image-4.svg" alt="Поиск">
             </div>
             <a href="#" class="category-description">Фитнес-браслеты</a>
           </li>
           <li class="category-list__item">
             <div class="category-image">
-              <img src="./images/category/category-image-5.svg">
+              <img src="./images/category/category-image-5.svg" alt="Поиск">
             </div>
             <a href="#" class="category-description">Умные часы</a>
           </li>
           <li class="category-list__item">
             <div class="category-image">
-              <img src="./images/category/category-image-6.svg">
+              <img src="./images/category/category-image-6.svg" alt="Поиск">
             </div>
             <a href="#" class="category-description">Квадрокоптеры</a>
           </li>
         </ul>
-      </section>
-  </div>
-
+      </div>
+    </section>
+  </main>
   <section class="delivery">
+    <h2 class="visually-hidden">Преимущества</h2>
     <div class="container delivery-group">
       <ul class="delivery-info">
         <li class="delivery-info__item delivery-info__item--active">
           <a class="delivery-info__link" href="#">Доставка</a>
         </li>
-
         <li class="delivery-info__item">
           <a class="delivery-info__link" href="#">Гарантия</a>
         </li>
-
         <li class="delivery-info__item">
           <a class="delivery-info__link" href="#">Кредит</a>
         </li>
@@ -230,15 +236,16 @@
   <div class="container">
     <section class="special-order">
       <div class="delivery-icon">
-        <img src="./images/main/delivery-icon.svg">
+        <img src="./images/main/delivery-icon.svg" alt="Поиск">
       </div>
       <h3 class="special-order__description">Доставим редкий товар под заказ</h3>
       <a class="special-order__about" href="#">
-        <img src="./images/main/info-icon.svg" alt="">
+        <img src="./images/main/info-icon.svg" alt="Поиск">
       </a>
     </section>
 
     <section class="company-details">
+      <h2 class="visually-hidden">О нас</h2>
       <div class="company-about">
         <h2 class="company__title">О нас</h2>
         <p class="company-about__subtitle">Огромный выбор гаджетов не оставит равнодушным гика,
@@ -267,18 +274,20 @@
     </section>
   </div>
   <section class="subscription">
+    <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
     <div class="container">
       <div class="subscription__description">
         <h2 class="subscription-titile">Подпишитесь на рассылку</h2>
         <p class="subscription-subtitle">Еженедельный дайджест с обзорами новинок,
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
       </div>
-      <div class="subscription__form">
-        <input class="subscription-email" type="email" name="" id="" placeholder="Ваш e-mail">
+      <form class="subscription__form" action="https://echo.htmlacademy.ru">
+        <label for="mail"></label>
+        <input class="subscription-email" id="mail" name="mail" type="email" placeholder="Ваш e-mail" required>
         <button class="subscription-button">Подписаться</button>
-        <img src="./images/main/vector.svg" alt="">
+        <img src="./images/main/vector.svg" alt="Поиск">
         <p class="subscription-info">Это бесплатно</p>
-      </div>
+      </form>
     </div>
   </section>
 
@@ -306,20 +315,20 @@
       <div class="footer-group">
         <div class="social-media">
           <a href="" class="social-media__link">
-            <img src="./images/footer/fb.png" alt="">
+            <img src="./images/footer/fb.png" alt="Поиск">
           </a>
           <a href="" class="social-media__link">
-            <img src="./images/footer/ig.png" alt="">
+            <img src="./images/footer/ig.png" alt="Поиск">
           </a>
           <a href="" class="social-media__link">
-            <img src="./images/footer/tw.png" alt="">
+            <img src="./images/footer/tw.png" alt="Поиск">
           </a>
         </div>
         <img class="academy-logo" src="./images/footer/academy-logo.png" alt="Логотип Академии">
       </div>
     </div>
   </footer>
-  </main>
+
 </body>
 
 </html>
