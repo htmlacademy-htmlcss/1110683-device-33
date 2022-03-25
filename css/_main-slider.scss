@@ -1,0 +1,158 @@
+.main-slider {
+    position: relative;
+}
+
+.slider-cards {
+    list-style: none;
+    counter-reset: cards;
+}
+
+.slider-card {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+    counter-increment: cards;
+}
+
+.slider-card-active {
+    position: static;
+    visibility: visible;
+}
+
+.slider-text-wrapper {
+    width: 560px;
+    padding-top: 122px;
+}
+
+.slider-title {
+    position: relative;
+    margin-bottom: 29px;
+    font-family: Raleway, sans-serif;
+    font-size: 5rem;
+    line-height: 50px;
+    font-weight: 800;
+    &::before {
+        content: "0" counter(cards);
+        position: absolute;
+        top: -92px;
+        left: 261px;
+        z-index: -1;
+        display: block;
+        width: 250px;
+        height: 135px;
+        font-family: Rubik, sans-serif;
+        font-size: 18rem;
+        line-height: 135px;
+        text-align: right;
+        color: #ffffff;
+    }
+}
+
+
+.slider-text {
+    margin-top: 0;
+    margin-bottom: 61px;
+    color: #444444;
+}
+
+.slider-link {
+    width: 224px;
+    margin-bottom: 59px;
+}
+
+.slider-properties {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slider-properties-wrapper {
+    margin-bottom: 38px;
+}
+
+.slider-properties-wrapper:not(:last-child) {
+    margin-right: 21px;
+}
+
+.slider-property-bold {
+    display: inline-block;
+    height: 30px;
+    margin-bottom: 12px;
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.slider-property {
+    font-size: 16px;
+    color: #444444;
+}
+
+.slider-button {
+    position: absolute;
+    top: 209px;
+    width: 24px;
+    height: 64px;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.slider-prev {
+    left: 28px;
+    background-image: url(../images/main/left-arrow.svg);
+}
+
+.slider-next {
+    left: 538px;
+    background-image: url(../images/main/right-arrow.svg);
+}
+
+.slider-button:hover,
+.slider-pagination-button:hover {
+    opacity: 0.6;
+}
+
+.slider-button:focus,
+.slider-pagination-button:focus {
+    outline: 2px solid #af4fff;
+}
+
+.slider-pagination {
+    position: absolute;
+    top: 373px;
+    right: -2px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slider-pagination-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.slider-pagination-button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 2px solid #ffffff;
+    &::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #000000;
+        border-radius: 50%;
+    }
+}
+
+.slider-pagination-button-active::after {
+    background-color: #000000;
+}
