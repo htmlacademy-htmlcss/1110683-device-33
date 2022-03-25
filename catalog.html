@@ -9,8 +9,8 @@
 
 <body>
     <div class="container">
-        <header class="header">
-            <a class="logo" href="#">
+        <header class="header catalog-header">
+            <a class="logo" href="./index.html">
                 <img class="logo__image" src="./images/header/logo.png" width="150" height="40" alt="Логотип Девайс">
             </a>
             <nav class="header__navigation">
@@ -84,6 +84,26 @@
                         <form action="https://echo.htmlacademy.ru/" class="catalog-filter" method="post">
                             <fieldset class="catalog-group">
                                 <legend class="catalog__title">Стоимость</legend>
+                                <div class="range">
+                                    <div class="range-scale">
+                                        <div class="range-bar" style="left: 0px; width: 119px">
+                                            <button class="range-toggle toggle-min">
+                                            </button>
+                                            <button class="range-toggle toggle-max">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="range-wrapper-inputs">
+                                        <label class="catalog-range-label label-min" style="margin-left: 0px;">
+                                            от <input class="range-input" type="number" value="0" name="min-price">
+                                        </label>
+                                        <label class="catalog-range-label label-max" style="margin-right: 73px;">
+                                            до <input class="range-input" type="number" value="5000" name="max-price"
+                                                style="width: 37px">
+                                        </label>
+                                    </div>
+                                </div>
                             </fieldset>
                             <fieldset class="catalog-group">
                                 <legend class="catalog__title">Цвет</legend>
@@ -134,7 +154,15 @@
                                 <option value="cheap">Дешевые</option>
                                 <option value="expensive">Дорогие</option>
                             </select>
-                            <button class="sort-button"></button>
+                            <div class="arrow-button-wrapper">
+                                <a class="catalog-arrow-button button-up" href="#">
+                                    <span class="visually-hidden">От меньшего к большему</span>
+                                </a>
+                            
+                                <a class="catalog-arrow-button button-down" href="#">
+                                    <span class="visually-hidden">От большего к меньшему</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="product-group">
                             <ul class="product">
@@ -181,8 +209,29 @@
                             </ul>
                             <button class="galary-button">Загрузить еще</button>
                             <div class="pages-navigation">
-                                <button class="button-prev">Назад</button>
-                                <button class="button-next">Вперед</button>
+                                <ul class="pagination">
+                                    <li class="pagination-item">
+                                      <a class="pagination-link pagination-disabled">Назад</a> 
+                                    </li>
+                                    <li class="pagination-item">
+                                      <a class="pagination-page-number pagination-current">1</a> 
+                                    </li>
+                                    <li class="pagination-item">
+                                      <a class="pagination-page-number" href="#">2</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                      <a class="pagination-page-number" href="#">3</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                      <a class="pagination-page-number" href="#">...</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                      <a class="pagination-page-number" href="#">15</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                      <a class="pagination-link" href="#">Вперёд</a>
+                                    </li>
+                                  </ul>
                             </div>
                         </div>
                     </div>

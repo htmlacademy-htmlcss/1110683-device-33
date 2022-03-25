@@ -14,7 +14,7 @@
 .filters__title {
     padding: 25px 0 60px;
     font-size: 1.6rem;
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     line-height: 18px;
@@ -30,13 +30,47 @@ fieldset {
     line-height: 20px;
     border-top: 2px solid #000;
     width: 100%;
-    padding-top: 12px;
+    padding: 12px 0 30px;
+}
+
+.arrow-button-wrapper {
+    display: flex;
+}
+
+.arrow-button-wrapper:focus-within {
+    outline: 2px solid #af4fff;
+}
+
+.catalog-arrow-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/catalog/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+}
+
+.button-down {
+    transform: rotate(180deg);
+}
+
+.catalog-arrow-button:hover {
+    opacity: 0.5;
+}
+
+.catalog-arrow-button:focus {
+    outline: none;
+}
+
+.visually-hidden {
+    display: none;
 }
 
 .control-group {
     display: flex;
     flex-direction: column;
-    padding: 20px 0 35px;
+    padding-bottom: 35px;
 }
 
 .catalog-button {
@@ -50,7 +84,7 @@ fieldset {
     position: relative;
     padding: 0 10px;
     font-size: 1.8rem;
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     line-height: 21px;
@@ -58,6 +92,7 @@ fieldset {
 
 .catalog {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 25px 40px;
 }
@@ -68,7 +103,7 @@ fieldset {
 
 .catalog-title {
     font-size: 1.6rem;
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     line-height: 18px;
@@ -118,9 +153,9 @@ fieldset {
     margin: 44px 30px;
     background-color: transparent;
     width: 780px;
-    border: 3px solid #E5E5E5;
+    border: 3px solid #e5e5e5;
     font-size: 1.6rem;
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     line-height: 18px;
@@ -129,19 +164,64 @@ fieldset {
 }
 
 .pages-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 25px;
-    background-color: #EBEBEB;
     margin: 0 30px;
-    width: 780px;
-    button {
-        border: none;
-        font-family: Raleway, sans-serif;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 21px;
-        text-transform: uppercase;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    background-color: #ebebeb;
+}
+
+.pagination-item:first-child {
+    margin-right: auto;
+}
+
+.pagination-item:last-child {
+    margin-left: auto;
+}
+
+.pagination-link {
+    display: block;
+    box-sizing: border-box;
+    padding: 26px 23px;
+    font-family: Raleway, sans-serif;
+    font-size: 1.8rem;
+    line-height: 20px;
+    font-weight: 800;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+}
+
+.pagination-page-number {
+    display: block;
+    width: 40px;
+    font-size: 1.6rem;
+    line-height: 71px;
+    font-weight: 400;
+    text-align: center;
+    color: #4444444d;
+    text-decoration: none;
+}
+
+.pagination-page-number {
+    ::before {
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: -2px;
+        width: 44px;
+        height: 44px;
     }
+    &:hover{
+        color: #444444;
+    }
+    &:focus {
+        outline: none;
+    }   
 }
