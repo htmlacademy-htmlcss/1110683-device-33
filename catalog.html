@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/header/favicon.ico">
 </head>
 
 <body>
@@ -17,12 +18,12 @@
                 <div class="header__navigation__item">
                     <div class="search-group">
                         <div class="search-group__item">
-                            <img class="search-image" src="./images/header/search.svg" width="16" height="16">
+                            <img class="search-image" src="./images/header/search.svg" width="16" height="16" alt="Поиск">
                             <input class="search-input" type="text" placeholder="Текс поиска">
                             <button class="search-button">Найти</button>
                         </div>
                         <div class="search-group__item">
-                            <img class="enter-img" src="./images/header/user.svg" width="13" height="12">
+                            <img class="enter-img" src="./images/header/user.svg" width="13" height="12" alt="Поиск">
                             <a class="search-group__link" href="#">Коля Петухов</a>
                         </div>
                         <div class="search-group__item">
@@ -33,11 +34,11 @@
                 <div class="header__navigation__item">
                     <div class="login-group">
                         <div class="login-group__item">
-                            <img class="compare-img" src="./images/header/compare.svg" width="13" height="12">
+                            <img class="compare-img" src="./images/header/compare.svg" width="13" height="12" alt="Поиск">
                             <a class="login-group__link" href="#">Сравнить</a>
                         </div>
                         <div class="login-group__item">
-                            <img class="trash-img" src="./images/header/card.svg" width="31" height="21">
+                            <img class="trash-img" src="./images/header/card.svg" width="31" height="21" alt="Поиск">
                             <a class="login-group__link" href="#">Корзина</a>
                         </div>
                     </div>
@@ -47,7 +48,7 @@
                 <div class="catalog-group">
                     <a class="catalog-group__title" href="catalog.html">Каталог товаров</a>
                     <a class="catalog-group__title" href="./catalog.html">
-                        <img class="catalog-group__img" src="./images/header/catalog.svg" width="50" height="50">
+                        <img class="catalog-group__img" src="./images/header/catalog.svg" width="50" height="50" alt="Поиск">
                     </a>
                 </div>
                 <div class="navigation-list-group">
@@ -59,8 +60,8 @@
         </header>
     </div>
     <main class="main-inner">
-        <header class="inner-header">
-            <div class="container">
+        <div class="container">
+            <header class="inner-header">
                 <h2 class="inner-header__title">Моноподы для селфи</h2>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs__item">
@@ -73,10 +74,11 @@
                         <a class="breadcrumbs-link">Моноподы для селфи</a>
                     </li>
                 </ul>
-            </div>
-        </header>
+            </header>
+        </div>
 
         <section class="catalog-products">
+            <h2 class="visually-hidden">Каталог товаров</h2>
             <div class="container">
                 <div class="catalog-products__item">
                     <div class="filters">
@@ -96,10 +98,10 @@
 
                                     <div class="range-wrapper-inputs">
                                         <label class="catalog-range-label label-min" style="margin-left: 0px;">
-                                            от <input class="range-input" type="number" value="0" name="min-price">
+                                            от <input class="range-input" type="text" value="0" name="min-price">
                                         </label>
                                         <label class="catalog-range-label label-max" style="margin-right: 73px;">
-                                            до <input class="range-input" type="number" value="5000" name="max-price"
+                                            до <input class="range-input" type="text" value="5000" name="max-price"
                                                 style="width: 37px">
                                         </label>
                                     </div>
@@ -158,7 +160,7 @@
                                 <a class="catalog-arrow-button button-up" href="#">
                                     <span class="visually-hidden">От меньшего к большему</span>
                                 </a>
-                            
+
                                 <a class="catalog-arrow-button button-down" href="#">
                                     <span class="visually-hidden">От большего к меньшему</span>
                                 </a>
@@ -211,27 +213,27 @@
                             <div class="pages-navigation">
                                 <ul class="pagination">
                                     <li class="pagination-item">
-                                      <a class="pagination-link pagination-disabled">Назад</a> 
+                                        <a class="pagination-link pagination-disabled">Назад</a>
                                     </li>
                                     <li class="pagination-item">
-                                      <a class="pagination-page-number pagination-current">1</a> 
+                                        <a class="pagination-page-number pagination-current">1</a>
                                     </li>
                                     <li class="pagination-item">
-                                      <a class="pagination-page-number" href="#">2</a>
+                                        <a class="pagination-page-number" href="#">2</a>
                                     </li>
                                     <li class="pagination-item">
-                                      <a class="pagination-page-number" href="#">3</a>
+                                        <a class="pagination-page-number" href="#">3</a>
                                     </li>
                                     <li class="pagination-item">
-                                      <a class="pagination-page-number" href="#">...</a>
+                                        <a class="pagination-page-number" href="#">...</a>
                                     </li>
                                     <li class="pagination-item">
-                                      <a class="pagination-page-number" href="#">15</a>
+                                        <a class="pagination-page-number" href="#">15</a>
                                     </li>
                                     <li class="pagination-item">
-                                      <a class="pagination-link" href="#">Вперёд</a>
+                                        <a class="pagination-link" href="#">Вперёд</a>
                                     </li>
-                                  </ul>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -263,13 +265,13 @@
                 <div class="footer-group">
                     <div class="social-media">
                         <a href="" class="social-media__link">
-                            <img src="./images/footer/fb.png" alt="">
+                            <img src="./images/footer/fb.png" alt="Поиск">
                         </a>
                         <a href="" class="social-media__link">
-                            <img src="./images/footer/ig.png" alt="">
+                            <img src="./images/footer/ig.png" alt="Поиск">
                         </a>
                         <a href="" class="social-media__link">
-                            <img src="./images/footer/tw.png" alt="">
+                            <img src="./images/footer/tw.png" alt="Поиск">
                         </a>
                     </div>
                     <img class="academy-logo" src="./images/footer/academy-logo.png" alt="Логотип Академии">
