@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/rubik-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/rubik-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/rubik-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/raleway-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    color: #000;
+    background: #fff;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+ button {
+     cursor: pointer;
+ }
